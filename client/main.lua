@@ -13,7 +13,9 @@ local EXIT_CONTROL = 75                    -- INPUT_VEH_EXIT (F)
 local WHEEL_HOLD_MS = 1500                 -- how long the wheels are held turned after getting out
 local IDLE_MS = 200
 
-local strings = Locales[Config.Locale] or Locales.en
+-- 'auto' follows ox_lib's language (the ox:locale convar), and English when that isn't set.
+local locale = Config.Locale == 'auto' and GetConvar('ox:locale', 'en') or Config.Locale
+local strings = Locales[locale] or Locales.en
 
 local driving = 0                          -- the vehicle the player is driving, or 0
 local entering, enteringWasRunning = 0, false
