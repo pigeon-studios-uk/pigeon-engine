@@ -5,7 +5,7 @@ lua54 'yes'
 name 'pigeon-engine'
 author 'Pigeon Studios'
 description 'Start and stop engines with a key, keep them running when you get out, and leave the wheels turned.'
-version '1.0.0'
+version '1.1.0'
 repository 'https://github.com/pigeon-studios-uk/pigeon-engine'
 
 -- Pigeon Studios version registry entry, read by server/version_check.lua.
